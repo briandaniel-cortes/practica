@@ -78,11 +78,13 @@ function Menu() {
     return (
         <div className='App'>
             <React.Fragment>
-                <nav class="navbar navbar-expand-lg bg-info  text-center" >
+                <nav class="navbar navbar-expand-lg   text-center" >
                     <div style={izquierda}>
 
                     </div>
+
                     <div style={centro}>
+                    <br/><br/>
                         <ul class=" navbar-nav me-auto "  >
                             <div class="card "  >
                                 <div class="card-body " >
@@ -90,9 +92,9 @@ function Menu() {
                                         <img src={vec1} />
                                     </div>
                                     <h3 >Bed</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setbed(Beds - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setbed(Beds - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -100,7 +102,7 @@ function Menu() {
                                             <h3>{Beds}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setbed(Beds + 1)} style={caja}>
+                                            <button  class="btn btn-success" onClick={() => setbed(Beds + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -113,9 +115,9 @@ function Menu() {
                                         <img src={vec2} />
                                     </div>
                                     <h3 >Refrigerador</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setRefrigerador(Refrigerador - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setRefrigerador(Refrigerador - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -123,7 +125,7 @@ function Menu() {
                                             <h3>{Refrigerador}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setRefrigerador(Refrigerador + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setRefrigerador(Refrigerador + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -136,9 +138,9 @@ function Menu() {
                                         <img src={vec3} />
                                     </div>
                                     <h3 >Furniture</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setFurniture(Furniture - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setFurniture(Furniture - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -146,7 +148,7 @@ function Menu() {
                                             <h3>{Furniture}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setFurniture(Furniture + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setFurniture(Furniture + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -159,9 +161,9 @@ function Menu() {
                                         <img src={vec4} />
                                     </div>
                                     <h3 >Oven</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setOven(Oven - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setOven(Oven - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -169,7 +171,7 @@ function Menu() {
                                             <h3>{Oven}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setOven(Oven + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setOven(Oven + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -182,9 +184,9 @@ function Menu() {
                                         <img src={vec5} />
                                     </div>
                                     <h3 >Sofa</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setSofa(Sofa - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setSofa(Sofa - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -192,7 +194,7 @@ function Menu() {
                                             <h3>{Sofa}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setSofa(Sofa + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setSofa(Sofa + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -209,9 +211,9 @@ function Menu() {
                                         <img src={vec6} />
                                     </div>
                                     <h3 >TV</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setTV(TV - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setTV(TV - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -219,7 +221,7 @@ function Menu() {
                                             <h3>{TV}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setTV(TV + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setTV(TV + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -232,9 +234,9 @@ function Menu() {
                                         <img src={vec7} />
                                     </div>
                                     <h3 >Washer</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setWasher(Washer - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setWasher(Washer - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -242,7 +244,7 @@ function Menu() {
                                             <h3>{Washer}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setWasher(Washer + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setWasher(Washer + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -255,9 +257,9 @@ function Menu() {
                                         <img src={vec8} />
                                     </div>
                                     <h3 >Dining</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setDining(Dining - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setDining(Dining - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -265,7 +267,7 @@ function Menu() {
                                             <h3>{Dining}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setDining(Dining + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setDining(Dining + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -278,9 +280,9 @@ function Menu() {
                                         <img src={vec9} />
                                     </div>
                                     <h3 >Desk</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setDesk(Desk - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setDesk(Desk - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -288,7 +290,7 @@ function Menu() {
                                             <h3>{Desk}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setDesk(Desk + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setDesk(Desk + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -301,9 +303,9 @@ function Menu() {
                                         <img src={vec10} />
                                     </div>
                                     <h3 >Wardrobe</h3>
-                                    <div class="row align-items-start" >
+                                    <div class="d-flex justify-content-center" >
                                         <div class="col" >
-                                            <button onClick={() => setWardrobe(Wardrobe - 1)} style={caja} >
+                                            <button class="btn btn-danger" onClick={() => setWardrobe(Wardrobe - 1)} style={caja} >
                                                 -
                                             </button>
                                         </div>
@@ -311,7 +313,7 @@ function Menu() {
                                             <h3>{Wardrobe}</h3>
                                         </div>
                                         <div class="col">
-                                            <button onClick={() => setWardrobe(Wardrobe + 1)} style={caja}>
+                                            <button class="btn btn-success" onClick={() => setWardrobe(Wardrobe + 1)} style={caja}>
                                                 +
                                             </button>
                                         </div>
@@ -324,12 +326,12 @@ function Menu() {
 
                     </div>
                     <div style={derecha}>
-                        g
+                        
                     </div>
 
                 </nav>
 
-                <nav class="navbar navbar-expand-lg bg-info  text-center" >
+                <nav class="navbar navbar-expand-lg   text-center" >
                     <div style={izquierda2}>
                         <div class="col">
                             <button onClick={() => Borrar()} style={limpiar}>
@@ -383,7 +385,7 @@ function Menu() {
                         </ul>
                     </div>
                     <div style={derecha2}>
-                        g
+                       
                     </div>
 
                 </nav>
@@ -430,5 +432,6 @@ let limpiar = {
     width: "200px",
     height: "50px"
 }
+
 
 export default Menu;

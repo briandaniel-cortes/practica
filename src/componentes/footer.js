@@ -4,9 +4,12 @@ function Footer(){
 
 return(
     <React.Fragment>
-        <h3>Hola Abajo</h3>
+        <footer style={gfa}></footer>
           </React.Fragment>
 );    
 }
-
+let gfa={
+  background:"rgb(247, 160, 11)",
+  height:"200px" 
+}
 export default Footer;
