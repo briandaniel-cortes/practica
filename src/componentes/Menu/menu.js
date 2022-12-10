@@ -354,7 +354,7 @@ function Menu() {
                                         <tbody>
                                             <tr>
                                                 <th scope="row"> <h3 >Total M2:</h3></th>
-                                                <td><h3 > {Total}</h3></td>
+                                                <td><h3 > {(Total).toFixed(2)}</h3></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row"><h3 >Subtotal:</h3> </th>
