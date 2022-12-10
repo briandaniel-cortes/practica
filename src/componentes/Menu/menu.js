@@ -15,6 +15,7 @@ function Menu() {
     let Totalitems = 0;
     let TotalDinero = 0;
     let SubTotal = 0;
+
     Total =
         Beds * 1.2 +
         Refrigerador * 1 +
@@ -39,6 +40,16 @@ function Menu() {
         Desk +
         Wardrobe
 
+        if(Beds<0)setbed(0) 
+        if(Refrigerador<0)setRefrigerador(0)
+        if(Furniture<0)setFurniture(0)
+        if(Oven<0)setOven(0)
+        if(Sofa<0)setSofa(0)
+        if(TV<0)setTV(0)
+        if(Washer<0)setWasher(0)
+        if(Dining<0)setDining(0)
+        if(Desk<0)setDesk(0)
+        if(Wardrobe<0)setWardrobe(0)
     return (
         <div className='App'>
             <React.Fragment>
