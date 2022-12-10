@@ -1,6 +1,4 @@
-import React, { useEffect, useState, Image } from "react";
-import Icon, { FontAwesome, Feather, Ionicons } from 'react-web-vector-icons';
-
+import React, { useEffect, useState } from "react";
 
 function Menu() {
     const [Beds, setbed] = useState(0);
@@ -17,17 +15,7 @@ function Menu() {
     let Totalitems = 0;
     let TotalDinero = 0;
     let SubTotal = 0;
-    let Descuento =0;
-    const vec1 = require('../Img/Vector1.png');
-    const vec2 = require('../Img/Vector2.png');
-    const vec3 = require('../Img/Vector3.png');
-    const vec4 = require('../Img/Vector4.png');
-    const vec5 = require('../Img/Vector5.png');
-    const vec6 = require('../Img/Vector6.png');
-    const vec7 = require('../Img/Vector7.png');
-    const vec8 = require('../Img/Vector8.png');
-    const vec9 = require('../Img/Vector9.png');
-    const vec10 = require('../Img/Vector10.png');
+
     Total =
         Beds * 1.2 +
         Refrigerador * 1 +
@@ -52,43 +40,27 @@ function Menu() {
         Desk +
         Wardrobe
 
-    if (Beds < 0) setbed(0)
-    if (Refrigerador < 0) setRefrigerador(0)
-    if (Furniture < 0) setFurniture(0)
-    if (Oven < 0) setOven(0)
-    if (Sofa < 0) setSofa(0)
-    if (TV < 0) setTV(0)
-    if (Washer < 0) setWasher(0)
-    if (Dining < 0) setDining(0)
-    if (Desk < 0) setDesk(0)
-    if (Wardrobe < 0) setWardrobe(0)
-
-    function Borrar() {
-        setbed(0)
-        setRefrigerador(0)
-        setFurniture(0)
-        setOven(0)
-        setSofa(0)
-        setTV(0)
-        setWasher(0)
-        setDining(0)
-        setDesk(0)
-        setWardrobe(0)
-    }
+        if(Beds<0)setbed(0) 
+        if(Refrigerador<0)setRefrigerador(0)
+        if(Furniture<0)setFurniture(0)
+        if(Oven<0)setOven(0)
+        if(Sofa<0)setSofa(0)
+        if(TV<0)setTV(0)
+        if(Washer<0)setWasher(0)
+        if(Dining<0)setDining(0)
+        if(Desk<0)setDesk(0)
+        if(Wardrobe<0)setWardrobe(0)
     return (
         <div className='App'>
             <React.Fragment>
                 <nav class="navbar navbar-expand-lg bg-info  text-center" >
                     <div style={izquierda}>
-
+                        g
                     </div>
                     <div style={centro}>
                         <ul class=" navbar-nav me-auto "  >
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec1} />
-                                    </div>
                                     <h3 >Bed</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -109,9 +81,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec2} />
-                                    </div>
                                     <h3 >Refrigerador</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -132,9 +101,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec3} />
-                                    </div>
                                     <h3 >Furniture</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -155,9 +121,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec4} />
-                                    </div>
                                     <h3 >Oven</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -178,9 +141,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec5} />
-                                    </div>
                                     <h3 >Sofa</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -205,9 +165,6 @@ function Menu() {
                         <ul class=" navbar-nav me-auto "  >
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec6} />
-                                    </div>
                                     <h3 >TV</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -228,9 +185,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec7} />
-                                    </div>
                                     <h3 >Washer</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -251,9 +205,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec8} />
-                                    </div>
                                     <h3 >Dining</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -274,9 +225,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec9} />
-                                    </div>
                                     <h3 >Desk</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -297,9 +245,6 @@ function Menu() {
                             </div>
                             <div class="card "  >
                                 <div class="card-body " >
-                                    <div style={imgs}>
-                                        <img src={vec10} />
-                                    </div>
                                     <h3 >Wardrobe</h3>
                                     <div class="row align-items-start" >
                                         <div class="col" >
@@ -331,12 +276,7 @@ function Menu() {
 
                 <nav class="navbar navbar-expand-lg bg-info  text-center" >
                     <div style={izquierda2}>
-                        <div class="col">
-                            <button onClick={() => Borrar()} style={limpiar}>
-                                Limpiar
-                            </button>
-                        </div>
-                        <br />
+                        g
                     </div>
                     <div style={centro2}>
                         <ul class=" navbar-nav me-auto "  >
@@ -357,21 +297,16 @@ function Menu() {
                                             <tr>
                                                 <th scope="row"><h3 >Subtotal:</h3> </th>
                                                 <td>
-                                                    <h3 > ${(SubTotal = Total * 200).toFixed(2)}</h3></td>
+                                                    <h3 > ${SubTotal = Total * 200}</h3></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row"><h3 >Tax: </h3></th>
-                                                <td><h3 > ${(TotalDinero = (SubTotal / 100) * 16).toFixed(2)}</h3></td>
+                                                <td><h3 > ${TotalDinero = (SubTotal / 100) * 16}</h3></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row"><h3 >Total: </h3></th>
                                                 <td>
-                                                    <h3 > ${Descuento=(SubTotal + TotalDinero).toFixed(2)}</h3></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><h3 >Due Today 50%: </h3></th>
-                                                <td>
-                                                    <h3 > ${((Descuento/100)*50).toFixed(2)}</h3></td>
+                                                    <h3 > ${SubTotal + TotalDinero}</h3></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -398,6 +333,7 @@ let izquierda = {
 
 }
 let centro = {
+    backgroundColor: "blue",
     flex: 3,
 }
 let derecha = {
@@ -423,12 +359,4 @@ let caja2 = {
     width: "80px",
     height: "50px"
 }
-let imgs = {
-    height: "100px"
-}
-let limpiar = {
-    width: "200px",
-    height: "50px"
-}
-
 export default Menu;
